@@ -63,9 +63,43 @@ D%26search.specialmenutype=%26userDisplay=50"
   #### 50개씩 나온 결과 확인 
 <img width="1792" alt="6-4" src="https://user-images.githubusercontent.com/60166685/90249972-4eeec700-de76-11ea-8a5e-086a62e908b8.png">
 
-5. 
+5. new tab(여기에서 이슈 발생!!)
+  - 해당 페이지에서 크롤링 코드를 실행하면 데이터가 불러와지지 않는다
+  - 원인은 iframe 환경때문이었다
+  - selenium 환경에서 새로운 탭으로 해당 페이지를 열어줘야한다 
+  
+<img width="1792" alt="7" src="https://user-images.githubusercontent.com/60166685/90251390-9c6c3380-de78-11ea-8ce1-3af4ea28e478.png">
 
+```python
+# 새로운 tab 생성
+driver.execute_script('window.open("{}");'.format(url))
 
+# tab 이동
+driver.switch_to_window(driver.window_handles[-1])
+```
 
+6. iframe page
+  - 크롤링하고자 하는 id tag 값을 확인
+  - id="cafe_main"
+  - 해당 iframe 페이지 선택 후 이동
 
+```python
+# ifame 페이지 선택
+iframe = driver.find_element_by_css_selector("#cafe_main")
 
+# iframe 변경
+driver.switch_to_frame(iframe)
+```
+
+7. crawling 
+  - 해당 페이지에서 link 데이터 크롤링
+
+```python
+# 데이터 크롤링 
+elements = driver.find_elements_by_xpath('//*[@id="main-area"]/div[4]/table/tbody/tr')
+len(elements)
+
+for element in elements:
+    link = element.find_element_by_css_selector("a").get_attribute("href")
+    print(link)
+```
