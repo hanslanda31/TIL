@@ -8,8 +8,7 @@
 
 1. url 
 <img width="1792" alt="2" src="https://user-images.githubusercontent.com/60166685/90249892-38487000-de76-11ea-8e83-620cf2efa7ab.png">
-```
-url = 'https://cafe.naver.com/surfx'
+```url = 'https://cafe.naver.com/surfx'
 driver = webdriver.Chrome()
 driver.implicitly_wait(3)
 driver.get(url)
