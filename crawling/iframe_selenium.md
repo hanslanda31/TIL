@@ -53,7 +53,7 @@ driver.find_element_by_xpath('//*[@id="menuLink2"]').click()
 <img width="1792" alt="5-3" src="https://user-images.githubusercontent.com/60166685/90250896-cf61f780-de77-11ea-8a52-76e89417f0d8.png">
 ```python
 # 50개 페이지 가져오는 url 
-url = "https://cafe.naver.com/surfx?iframe_url=/ArticleList.nhn%3Fsearch.clubid=22509719%26search.boardtype=L%26search.menuid=2%26search.marketBoardTab=D%26search.specialmenutype=%26userDisplay=50"
+url = "https://cafe.naver.com/surfxiframe_url=/ArticleList.nhn%3Fsearch.clubid=22509719%26search.boardtype=L%26search.menuid=2%26search.marketBoardTab=D%26search.specialmenutype=%26userDisplay=50"
 ```
   
 
