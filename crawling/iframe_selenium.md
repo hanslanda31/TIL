@@ -55,7 +55,9 @@ driver.find_element_by_xpath('//*[@id="menuLink2"]').click()
 ```python
 # 50개 페이지 가져오는 url 
 
-url = "https://cafe.naver.com/surfxiframe_url=/ArticleList.nhn%3Fsearch.clubid=22509719%26search.boardtype=L%26search.menuid=2%26search.marketBoardTab=D%26search.specialmenutype=%26userDisplay=50"
+url = "https://cafe.naver.com/surfxiframe_url=/ArticleList.nhn%\
+3Fsearch.clubid=22509719%26search.boardtype=L%26search.menuid=2%26search.marketBoardTab=\
+D%26search.specialmenutype=%26userDisplay=50"
 
 ```
   
