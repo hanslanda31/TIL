@@ -60,7 +60,10 @@ url = "https://cafe.naver.com/surfxiframe_url=/ArticleList.nhn%\
 D%26search.specialmenutype=%26userDisplay=50"
 
 ```
-  
+  #### 50개씩 나온 결과 확인 
+<img width="1792" alt="6-4" src="https://user-images.githubusercontent.com/60166685/90249972-4eeec700-de76-11ea-8a5e-086a62e908b8.png">
+
+5. 
 
 
 
